@@ -1,8 +1,11 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 
-def tasks(request):
-    return HttpResponse('hello')
+def navbar(request):
+    return render(request,'navbar.html')
 
-def task(request,pk):
-    return HttpResponse('hello your task is'+ ' '+ pk)
+def projects(request):
+    return render(request,'projects/projects.html')
+
+def project(request):
+    return render(request,'projects/single-project.html')
