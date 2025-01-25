@@ -9,3 +9,7 @@ def projects(request):
 
 def project(request):
     return render(request,'projects/single-project.html')
+
+def createProject(request):
+    context={}
+    return render(request,"projects/projects_form.html",context)
